@@ -1,0 +1,17 @@
+[console]
+depth = 4
+[install]
+smol = true
+exact = true
+frozenLockfile = true
+linker = "isolated"
+[log]
+logLevel = "debug" # "debug" | "warn" | "error"
+[test]
+coverage = true
+coverageThreshold = 0.9
+[watch]
+ignore = ["node_modules", "dist"]
+coverageThreshold = { line = 0.9, function = 0.8, statement = 0.9 }
+[build]
+target = "esnext"
